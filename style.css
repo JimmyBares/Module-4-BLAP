@@ -98,8 +98,8 @@ font-size: 32px;
 border-radius: 50%;
 border: none;
 background-color: #242424;
-color: white
-position fixed; 
+color: white; 
+position: fixed; 
 bottom: 32px;
 right: 40px;
 z-index: 100;
