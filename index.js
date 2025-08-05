@@ -13,8 +13,10 @@ event.preventDefault();
 //).then(() => {
 //console.log('this worked')
 //})
+const loading = document.querySelector('.modal__overlay--loading')
+
 setTimeout(() => {
 console.log('it worked 1')
-}, timeout);
+}, 500);
 
 }
