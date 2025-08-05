@@ -400,6 +400,7 @@ font-size: 40px;
 font-weight: 700%;
 text-align: center;
 padding: 28px;
+z-index: -1;
 }
 
 .fa-spinner {
