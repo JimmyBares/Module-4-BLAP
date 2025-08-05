@@ -1,22 +1,22 @@
-// template_u830ee2
-// service_zw9bhfr
-// DJddATGZ7UI7UpI2l
-
 function contact(event) {
-event.preventDefault();
-//emailjs
-//.sendForm(
-  //  'service_zw9bhfr',
- //   'template_u830ee2',
-  //  event.target,
- //   'DJddATGZ7UI7UpI2l' 
-//).then(() => {
-//console.log('this worked')
-//})
-const loading = document.querySelector('.modal__overlay--loading')
-
-setTimeout(() => {
-console.log('it worked 1')
-}, 500);
-
+  event.preventDefault();
+  const loading = document.querySelector(".modal__overlay--loading");
+  const success = document.querySelector(".modal__overlay--success");
+  loading.classList += " modal__overlay--visible";
+  emailjs.sendForm(
+      "service_zw9bhfr",
+      "template_u830ee2",
+      event.target,
+      "user_DJddATGZ7UI7UpI2l"
+    )
+    .then(() => {
+      loading.classList.remove("modal__overlay--visible");
+      success.classList += " modal__overlay--visible";
+    })
+    .catch(() => {
+      loading.classList.remove("modal__overlay--visible");
+      alert(
+        "The email service is temporarily unavailable. Please contact me directly on email@email.com"
+      );
+    });
 }
