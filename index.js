@@ -3,11 +3,12 @@ function contact(event) {
   const loading = document.querySelector(".modal__overlay--loading");
   const success = document.querySelector(".modal__overlay--success");
   loading.classList += " modal__overlay--visible";
-  emailjs.sendForm(
+  emailjs
+  .sendForm(
       "service_zw9bhfr",
       "template_u830ee2",
       event.target,
-      "DJddATGZ7UI7UpI2l"
+      "Xc11f3pKoTXsAzANl"
     )
     .then(() => {
       loading.classList.remove("modal__overlay--visible");
