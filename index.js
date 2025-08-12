@@ -8,7 +8,7 @@ function contact(event) {
       "service_zw9bhfr",
       "template_u830ee2",
       event.target,
-      "user_Xc11f3pKoTXsAzANI"
+      "Xc11f3pKoTXsAzANl"
     )
     .then(() => {
       loading.classList.remove("modal__overlay--visible");
