@@ -8,7 +8,7 @@ function contact(event) {
       "service_zw9bhfr",
       "template_u830ee2",
       event.target,
-      "Xc11f3pKoTXsAzANl"
+      ""
     )
     .then(() => {
       loading.classList.remove("modal__overlay--visible");
@@ -20,4 +20,9 @@ function contact(event) {
         "The email service is temporarily unavailable. Please contact me directly on email@email.com"
       );
     });
+}
+
+function toggleModal() {
+  // toggle modal
+  console.log('toggleModal')
 }
